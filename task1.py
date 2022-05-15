@@ -1,5 +1,3 @@
-from typing import List
-
 from sqlalchemy import Numeric, desc, func
 from sqlalchemy.orm import aliased, joinedload
 
