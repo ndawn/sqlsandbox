@@ -9,5 +9,5 @@ from categories
               on items.id = item_parameters.item_id
          join category_parameters
               on categories.id = category_parameters.category_id
--- where categories.id = 9
+where categories.id = 9  -- or any desired category id
 ;

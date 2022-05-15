@@ -1,13 +1,3 @@
-select o1.*
-from orders o1
-         left join orders o2
-                   on o1.user_id = o2.user_id
-                       and o1.created_at < o2.created_at
-where o2.created_at is null
-order by o1.created_at desc
-;
-
-
 select most_recent_orders.user_id,
        most_recent_orders.id as order_id,
        items.name                                  as item_name,

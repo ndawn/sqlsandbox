@@ -1,11 +1,3 @@
--- select distinct on (orders.user_id) orders.user_id,
---                                     orders.id                                                          as order_id,
---                                     max(orders.created_at)
---                                     over (partition by orders.user_id order by orders.created_at desc) as max_order_created_at
--- from orders
--- ;
-
-
 select o1.*
 from orders o1
          left join orders o2

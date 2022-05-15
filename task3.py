@@ -1,7 +1,4 @@
-from typing import List
-
-from sqlalchemy import desc
-from sqlalchemy.orm import aliased, joinedload
+from sqlalchemy.orm import joinedload
 
 from models import *
 from session import Session
